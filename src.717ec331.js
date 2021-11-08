@@ -73,4 +73,4 @@ module.exports=require("./lib/axios");
 },{"../refs/get-refs":"efIR","../API/api-service":"oY3H"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/search");
 },{"./sass/main.scss":"clu1","./js/components/search":"A7jH"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-project-of-group-12/src.1fd2d428.js.map
+//# sourceMappingURL=/js-project-of-group-12/src.717ec331.js.map
