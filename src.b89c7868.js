@@ -83,4 +83,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/search"),require("./js/components/home"),require("./js/components/pages");
 },{"./sass/main.scss":"clu1","./js/components/search":"A7jH","./js/components/home":"wBjs","./js/components/pages":"CDwL"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-project-of-group-12/src.6ee0ec21.js.map
+//# sourceMappingURL=/js-project-of-group-12/src.b89c7868.js.map
