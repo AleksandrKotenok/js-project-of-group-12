@@ -6,10 +6,19 @@ axios.defaults.baseURL = ACCESS.BASE_URL;
 axios.defaults.headers.common.Authorization = ACCESS.AUTH_TOKEN;
 
 export default {
-  // Получение полной информации о трендах
+  // Фетч полной информации о трендах
   async fetchMovieTrending() {
     try {
       const response = await axios.get('/trending/movie/day?');
+      return response.data.results;
+    } catch (error) {
+      console.error(error);
+    }
+  },
+  // Фетч популярных фильмов
+  async fetchMoviePopular(page) {
+    try {
+      const response = await axios.get(`/movie/popular?page=${page}`);
       return response.data.results;
     } catch (error) {
       console.error(error);
