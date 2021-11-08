@@ -1,6 +1,6 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"clu1":[function(require,module,exports) {
 
-},{"./../images/Header-desktop.jpg":[["Header-desktop.ef3252da.jpg","dvOL"],"dvOL"],"./../images/film.svg":[["film.45cb47e6.svg","O322"],"O322"],"./../images/search.svg":[["search.d7c9e80a.svg","TnGF"],"TnGF"],"./../images/close.svg":[["close.8f72539b.svg","bSVp"],"bSVp"]}],"efIR":[function(require,module,exports) {
+},{"./../images/Header-desktop.jpg":[["Header-desktop.ef3252da.jpg","dvOL"],"dvOL"],"./../images/search.svg":[["search.d7c9e80a.svg","TnGF"],"TnGF"],"./../images/close.svg":[["close.8f72539b.svg","bSVp"],"bSVp"]}],"efIR":[function(require,module,exports) {
 "use strict";function e(){return{searchInputRef:document.querySelector(".header__search-form-input"),searchBtnRef:document.querySelector(".header__form-btn")}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=e;
 },{}],"M9Fa":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e={BASE_URL:"https://api.themoviedb.org/3",AUTH_TOKEN:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4OGRlZmQ1MjIwZDk4NGQ3NWQ5MDU4YTNhNDg3ZGUxZCIsInN1YiI6IjYwYjRhMGYxYTYxZGUxMDA1N2ExOWIxZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Hlhlb0gf5WqfkdeB90cdamF3GUPsITWCymVS4yanSsE"};exports.default=e;
@@ -73,4 +73,4 @@ module.exports=require("./lib/axios");
 },{"../refs/get-refs":"efIR","../API/api-service":"oY3H"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/search");
 },{"./sass/main.scss":"clu1","./js/components/search":"A7jH"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-project-of-group-12/src.86fbfde5.js.map
+//# sourceMappingURL=/js-project-of-group-12/src.1fd2d428.js.map
