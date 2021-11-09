@@ -1,5 +1,8 @@
 import ACCESS from './api-authorization';
 
+
+import {startSpinner, stopSpinner} from '../components/spinner.js';
+
 const axios = require('axios').default;
 
 axios.defaults.baseURL = ACCESS.BASE_URL;
@@ -9,7 +12,9 @@ export default {
   // Получение полной информации о трендах
   async fetchMovieTrending() {
     try {
+      startSpinner();
       const response = await axios.get('/trending/movie/day?');
+      stopSpinner();
       return response.data.results;
     } catch (error) {
       console.error(error);
@@ -18,7 +23,9 @@ export default {
   // Фетч по поисковому запросу
   async fetchMovieSearchQuery(searchQuery) {
     try {
+      startSpinner();
       const response = await axios.get(`/search/movie?&query=${searchQuery}`);
+      stopSpinner();
       return response.data.results;
     } catch (error) {
       console.error(error);
@@ -27,7 +34,9 @@ export default {
   // Фетч описания фильма по его ID
   async fetchMovieDescription(movieId) {
     try {
+      startSpinner();
       const response = await axios.get(`/movie/${movieId}?`);
+      stopSpinner();
       return response.data;
     } catch (error) {
       console.error(error);

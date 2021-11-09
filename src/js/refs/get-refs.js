@@ -4,5 +4,7 @@ export default function getRefs() {
     searchBtnRef: document.querySelector('.header__form-btn'),
     insertPoint: document.querySelector('.hero__list'),
     homeLink: document.querySelector('#home-link'),
+    spinnerRef: document.querySelector('.loading-spinner'),
+    spinnerDotsRefs: document.querySelector('.loading-dots'),
   };
 }
