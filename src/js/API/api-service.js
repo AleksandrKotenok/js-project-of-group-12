@@ -84,14 +84,4 @@ API.prototype._resetPage = function () {
   this._page = 1;
 };
 
-//увеличить значение страницы на еденицу
-API.prototype._incrementPage = function () {
-  this._page += 1;
-};
-
-//уменьшить значение страницы на еденицу
-API.prototype._decrementPage = function () {
-  this._page -= 1;
-};
-
 export default API;
