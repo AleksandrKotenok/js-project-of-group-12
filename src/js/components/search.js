@@ -2,7 +2,7 @@ import getRefs from '../refs/get-refs';
 import API from '../API/api-service';
 import searchErr from './search-error';
 import card from '../../handlebars/cardMovie.hbs';
-const { searchInputRef, searchBtnRef, insertPoint } = getRefs();
+const { searchInputRef, searchBtnRef, insertPoint, pagesContainer } = getRefs();
 const api = new API();
 
 import { startSpinner, stopSpinner } from './spinner.js';
