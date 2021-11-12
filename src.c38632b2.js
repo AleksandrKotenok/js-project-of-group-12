@@ -102,4 +102,4 @@ var o;function t(o){return(t="function"==typeof Symbol&&"symbol"==typeof Symbol.
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/search"),require("./js/components/home"),require("./js/components/pages"),require("./js/components/modal"),require("./js/components/library");var e=s(require("./js/API/api-service"));require("./js/components/footer-modal.js");var r=require("vanilla-back-to-top");function s(e){return e&&e.__esModule?e:{default:e}}const o=new e.default;(0,r.addBackToTop)({scrollDuration:500});
 },{"./sass/main.scss":"clu1","./js/components/search":"A7jH","./js/components/home":"wBjs","./js/components/pages":"CDwL","./js/components/modal":"fSkc","./js/components/library":"wZ4W","./js/API/api-service":"oY3H","./js/components/footer-modal.js":"xvCf","vanilla-back-to-top":"mehQ"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-project-of-group-12/src.448d0ded.js.map
+//# sourceMappingURL=/js-project-of-group-12/src.c38632b2.js.map
