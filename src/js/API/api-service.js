@@ -49,7 +49,7 @@ API.prototype.fetchMovieSearchQuery = async function () {
     const response = await axios.get(
       `/search/movie?&query=${this._searchQuery}&page=${this._page}`,
     );
-    return response.data.results;
+    return response.data;
   } catch (error) {
     console.error(error);
   }

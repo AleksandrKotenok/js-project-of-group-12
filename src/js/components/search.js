@@ -6,20 +6,35 @@ const { searchInputRef, searchBtnRef, insertPoint, pagesContainer } = getRefs();
 const api = new API();
 
 import { startSpinner, stopSpinner } from './spinner.js';
+import createCardData from './create-card-data';
 
 searchBtnRef.addEventListener('click', onSearchInput);
 
 async function onSearchInput(e) {
   if (!searchInputRef.value.trim()) return;
+
   initialReset();
+
   e.preventDefault();
-  api._setQuery(searchInputRef.value);
-  startSpinner();
-  const results = await api.fetchMovieSearchQuery();
-  if (!results.length) searchErr(true);
-  insertPoint.insertAdjacentHTML('beforeend', card(results));
-  stopSpinner();
-  pagesContainer.innerHTML = '';
+
+  try {
+    api._setQuery(searchInputRef.value);
+
+    startSpinner();
+
+    const data = await api.fetchMovieSearchQuery();
+    const result = await data.results;
+
+    const markup = await createCardData(result);
+
+    if (!result.length) searchErr(true);
+
+    insertPoint.insertAdjacentHTML('beforeend', card(markup));
+    stopSpinner();
+    pagesContainer.innerHTML = '';
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 function initialReset() {
