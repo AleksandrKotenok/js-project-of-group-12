@@ -2,23 +2,24 @@ import getRefs from '../refs/get-refs';
 import API from '../API/api-service';
 import searchErr from './search-error';
 import card from '../../handlebars/cardMovie.hbs';
-const { searchInputRef, searchBtnRef, insertPoint, pagesContainer } = getRefs();
+const { searchForm, insertPoint } = getRefs();
 const api = new API();
 
 import { startSpinner, stopSpinner } from './spinner.js';
 import createCardData from './create-card-data';
 
-searchBtnRef.addEventListener('click', onSearchInput);
+searchForm.addEventListener('submit', onSearchInput);
 
 async function onSearchInput(e) {
-  if (!searchInputRef.value.trim()) return;
-
-  initialReset();
-
   e.preventDefault();
 
+  const value = e.currentTarget.elements.query.value;
+  if (!value.trim()) return;
+  initialReset();
+
+  e.currentTarget.reset();
   try {
-    api._setQuery(searchInputRef.value);
+    api._setQuery(value);
 
     startSpinner();
 
@@ -31,7 +32,6 @@ async function onSearchInput(e) {
 
     insertPoint.insertAdjacentHTML('beforeend', card(markup));
     stopSpinner();
-    pagesContainer.innerHTML = '';
   } catch (error) {
     console.error(error);
   }
