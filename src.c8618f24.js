@@ -101,4 +101,4 @@ module.exports="/js-project-of-group-12/coming-soon.1cdccd35.jpg";
 },{"../refs/get-refs":"efIR"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/search"),require("./js/components/home"),require("./js/components/pages"),require("./js/components/modal"),require("./js/components/library");var e=s(require("./js/API/api-service"));function s(e){return e&&e.__esModule?e:{default:e}}require("./js/components/back-to-top"),require("./js/components/footer-modal.js");const r=new e.default;
 },{"./sass/main.scss":"clu1","./js/components/search":"A7jH","./js/components/home":"wBjs","./js/components/pages":"CDwL","./js/components/modal":"fSkc","./js/components/library":"wZ4W","./js/API/api-service":"oY3H","./js/components/back-to-top":"X8Wl","./js/components/footer-modal.js":"xvCf"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-project-of-group-12/src.c46bfc8b.js.map
+//# sourceMappingURL=/js-project-of-group-12/src.c8618f24.js.map
