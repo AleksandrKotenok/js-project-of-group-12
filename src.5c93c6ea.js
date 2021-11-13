@@ -118,4 +118,4 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"firebase/app":"OJEJ"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/components/search"),require("./js/components/home"),require("./js/components/pages"),require("./js/components/modal"),require("./js/components/library"),require("./js/components/back-to-top"),require("./js/components/footer-modal.js"),require("./js/firebase/firebase");
 },{"./sass/main.scss":"clu1","./js/components/search":"A7jH","./js/components/home":"wBjs","./js/components/pages":"CDwL","./js/components/modal":"fSkc","./js/components/library":"wZ4W","./js/components/back-to-top":"X8Wl","./js/components/footer-modal.js":"xvCf","./js/firebase/firebase":"rwYf"}]},{},["Focm"], null)
-//# sourceMappingURL=/js-project-of-group-12/src.38de62b5.js.map
+//# sourceMappingURL=/js-project-of-group-12/src.5c93c6ea.js.map
